@@ -1,0 +1,128 @@
+.main
+{
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.offscreen {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+.instructions {
+    font-size: 10px;
+    font-weight:100;
+    font-style: italic;
+    margin-top: 5px;
+    color: red;
+}
+
+.form-control{
+    font-size: 12px;
+}
+
+.LoginBody
+{
+    background-color: #e7cbc3;
+}
+
+a
+{
+    color: #67c0c9 !important;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+}
+
+a:hover{
+    color: #2e364d !important;
+}
+
+.RegisterBody
+{
+    background-color: #b3bed1;
+}
+
+.center-card
+{
+    background-color: #fff;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+    padding: 30px 50px;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+@media only screen and (min-width:650px) {
+    .center-card
+    {
+        width: 50%;
+        transition-property: width;
+        transition-duration: .3s;
+    }
+}
+
+.center-card:hover{
+    box-shadow: 5px 5px 8px #2e364d;
+    transition-property: box-shadow;
+    transition-duration: .3s;
+}
+
+.LoginBody  .center-card:hover{
+    box-shadow: 5px 5px 8px #000;
+    transition-property: box-shadow;
+    transition-duration: .3s;
+}
+
+.custom-form{
+    text-align: left;
+    font-weight: 700;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+.custom-button
+{
+    
+    display: inline-block !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    border-radius: 500px !important;
+    border: 1px solid transparent !important;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    letter-spacing: 2px !important;
+    min-width: 160px !important;
+    text-transform: uppercase !important;
+    white-space: normal !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    padding: 17px 48px !important;
+    color: #fff !important;
+    background-color: #67c0c9 !important;
+    height: 48px;
+
+}
+
+.custom-button.secondary
+{
+    background-color: #dfdfdf !important;
+}
+
+.custom-button:hover{
+    background-color: #dfdfdf !important;
+    color: #2e364d !important;
+}
